@@ -1,0 +1,15 @@
+{
+    "name" : "aurelienlair/travis-php-composer",
+    "description": "Travis exercises",
+    "authors": [
+        {
+            "name": "Aurélien Lair",
+            "email": "aurelien.lair@nomail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": ["classes/"],
+    }
+}
