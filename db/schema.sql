@@ -1,10 +1,10 @@
-CREATE TABLE Vehicle(
+CREATE TABLE vehicle(
     oid SERIAL PRIMARY KEY,
     manufactures VARCHAR(255),
     model VARCHAR(100),
     color VARCHAR(50),
 );
-CREATE TABLE Van(
+CREATE TABLE van(
     oid SERIAL PRIMARY KEY,
     manufactures VARCHAR(255),
     model VARCHAR(100),
@@ -12,7 +12,7 @@ CREATE TABLE Van(
     wheels smallint,
     capacity smallint
 );
-CREATE TABLE Car(
+CREATE TABLE car(
     oid SERIAL PRIMARY KEY,
     manufactures VARCHAR(255),
     model VARCHAR(100),
