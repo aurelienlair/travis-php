@@ -1,0 +1,11 @@
+language: php
+php: 
+    7.1        
+
+before_script:
+    - createdb testdb -U postgres
+    - psql -f db/schema.sql --username=postgres testdb
+    - psql -c '\connect testdb' -f db/fixtures.sql --username=postgres testdb 
+
+notifications:
+    email: false
