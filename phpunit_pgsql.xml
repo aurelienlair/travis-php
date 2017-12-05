@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="spec/setup/bootstrap.php" colors="true">
+    <php>
+        <var name="db_dsn" value="pgsql:dbname=testdb;host=localhost"/>
+        <var name="db_username" value="postgres"/>
+        <var name="db_password" value="testdb"/>
+    </php>
+    
+    <filter>
+      <whitelist addUncoveredFilesFromWhitelist="false">
+        <directory suffix=".php">classes</directory>
+      </whitelist>
+    </filter>
+
+    <testsuites>
+        <testsuite name="Test DB Suite">
+            <directory>spec</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
