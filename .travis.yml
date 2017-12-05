@@ -12,7 +12,7 @@ before_script:
 services:
   - postgresql
 
-script: phpunit --configuration phpunit_pgsql.xml --coverage-text
+script: phpunit --configuration phpunit.xml --coverage-text
 
 notifications:
     email: false
