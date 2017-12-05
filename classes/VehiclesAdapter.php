@@ -11,7 +11,7 @@ class VehiclesAdapter
 
     public function countByColor($color)
     {
-        $sql = "SELECT count(1) FROM vehicles WHERE color = " . $pdo->quote($color);
+        $sql = "SELECT count(1) FROM vehicles WHERE color = " . $this->pdo->quote($color);
         $stmt = $this->pdo->query($sql);
         return count($stmt->fetchColumn());
     }
