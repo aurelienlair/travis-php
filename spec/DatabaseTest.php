@@ -1,10 +1,9 @@
 <?php
 
-class DatabaseTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class DatabaseTest extends TestCase
 {
-    /**
-     * @var PDO
-     */
     private $pdo;
 
     public function setUp()
