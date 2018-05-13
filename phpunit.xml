@@ -11,4 +11,9 @@
             <directory>spec</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./classes</directory>
+        </whitelist>
+    </filter>
 </phpunit>
