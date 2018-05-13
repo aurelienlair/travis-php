@@ -2,7 +2,7 @@ CREATE TABLE vehicle(
     oid SERIAL PRIMARY KEY,
     manufactures VARCHAR(255),
     model VARCHAR(100),
-    color VARCHAR(50),
+    color VARCHAR(50)
 );
 CREATE TABLE van(
     oid SERIAL PRIMARY KEY,
